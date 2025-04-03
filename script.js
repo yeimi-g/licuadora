@@ -17,11 +17,11 @@ function controlarLicuadora(){
 
 function controlarSonido(){
     if(sonidoLicuadora.paused){
-        botonLicuadora.onplay();
-        sonidoLicuadora.onplay();
+        botonLicuadora.play();
+        sonidoLicuadora.play();
     } else {
-        botonLicuadora.onplay();
-        sonidoLicuadora.onpause();
+        botonLicuadora.play();
+        sonidoLicuadora.pause();
         sonidoLicuadora.currentTime = 0;
     }
 }
